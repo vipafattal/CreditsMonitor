@@ -9,7 +9,6 @@
         android:focusable="true"
         tools:context=".fragments.DetailsFragment">
 
-
     <com.google.android.material.card.MaterialCardView
             app:cardBackgroundColor="@color/colorAccent"
             android:layout_width="match_parent"
@@ -18,7 +17,7 @@
             android:id="@+id/toolbar_detail"
             tools:ignore="MissingConstraints">
         <RelativeLayout
-                android:paddingTop="10dp"
+                android:paddingTop="15dp"
                 android:layout_marginEnd="@dimen/margin_normal"
                 android:layout_marginStart="@dimen/margin_normal"
                 android:layout_marginTop="?topAppMargin"
