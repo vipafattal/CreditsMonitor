@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:duration="400"
+        android:interpolator="@android:interpolator/anticipate_overshoot"
+        android:transitionOrdering="together"
+        tools:targetApi="kitkat"
+        android:startDelay="0">
+
+    <changeTransform  />
+    <changeClipBounds />
+    <changeBounds />
+</transitionSet>

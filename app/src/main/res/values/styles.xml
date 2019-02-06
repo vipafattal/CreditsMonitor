@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="iconTintColor">#9C9C9C</item>
+    </style>
+
+    <style name="AppTheme.Dark">
+        <item name="topAppMargin">0dp</item>
+        <item name="colorPrimary">#383838</item>
+        <item name="colorPrimaryDark">@color/primaryDark_dark</item>
+        <item name="colorSecondary">#33343B</item>
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="android:textColorSecondary">#ABA5A5</item>
+        <item name="android:windowBackground">@color/primaryDark_dark</item>
+        <item name="iconTintColor">@color/colorAccentDark</item>
+    </style>
+
+    <style name="AppTheme.Light">
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item name="topAppMargin">24dp</item>
+        <item name="colorPrimary">#FFF</item>
+        <item name="colorPrimaryDark">@color/primaryDark_light</item>
+        <item name="colorSecondary">#FFFFFF</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:textColorSecondary">#949494</item>
+        <item name="android:windowBackground">@color/primaryDark_light</item>
+    </style>
+
+    <style name="Title">
+        <item name="android:textSize">@dimen/font_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="DetailsTitle" parent="Base.TextAppearance.AppCompat.Title">
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <style name="DetailsBold" parent="Base.TextAppearance.AppCompat.Body1">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DetailsBold.Large">
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <style name="Secondary" parent="Theme.MaterialComponents.Light"/>
+
+    <style name="Secondary.Negative">
+        <item name="colorSecondary">#ff4d6a</item>
+    </style>
+
+    <style name="Secondary.Positive">
+        <item name="colorSecondary">@color/colorAccent</item>
+    </style>
+
+    <style name="Widget.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+</resources>

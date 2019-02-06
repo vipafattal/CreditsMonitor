@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="@dimen/card_radius"
+        android:clickable="true"
+        app:cardBackgroundColor="?colorSecondary"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+        <ImageView
+                tools:src="@drawable/img_google_play"
+                android:id="@+id/credit_icon"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="7dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/ver1"/>
+
+        <TextView
+                android:id="@+id/credit_title"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                tools:text="Google Play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/credit_icon"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/credit_icon"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="@+id/credit_icon"/>
+
+        <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:text="@string/amount"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/amount_text"
+                app:layout_constraintStart_toStartOf="@+id/ver1"
+                app:layout_constraintTop_toTopOf="@+id/hor1"
+        />
+        <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:text="@string/date"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/date_text"
+                app:layout_constraintStart_toStartOf="@+id/ver2"
+                app:layout_constraintTop_toTopOf="@+id/hor1"
+        />
+        <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:text="@string/status"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/status_text"
+                app:layout_constraintStart_toStartOf="@+id/ver3"
+                app:layout_constraintTop_toTopOf="@+id/hor1"
+        />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ver1"
+                app:layout_constraintGuide_begin="0dp"
+                android:orientation="vertical"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ver2"
+                app:layout_constraintGuide_percent="0.333"
+                android:orientation="vertical"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ver3"
+                app:layout_constraintGuide_percent="0.666"
+                android:orientation="vertical"/>
+        <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hor1"
+                app:layout_constraintGuide_percent="0.65"
+                android:orientation="horizontal"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hor2"
+                app:layout_constraintGuide_percent="0.80"
+                android:orientation="horizontal"/>
+
+        <TextView
+                android:textAppearance="@style/DetailsBold.Large"
+                tools:text="$38,456.78"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/amount_value_text"
+                app:layout_constraintTop_toTopOf="@+id/hor2" app:layout_constraintStart_toStartOf="@+id/ver1"
+        />
+
+        <TextView
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                tools:text="27.07.2018"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date_value_text" app:layout_constraintTop_toTopOf="@+id/hor2"
+                app:layout_constraintStart_toStartOf="@+id/ver2"
+        />
+
+        <ImageView
+                tools:src="@drawable/ic_correct"
+                android:id="@+id/status_img"
+                android:layout_width="35dp"
+                android:layout_height="35dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+                tools:text="Received"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/status_value_text"
+                app:layout_constraintStart_toStartOf="@+id/ver3"
+                app:layout_constraintTop_toTopOf="@+id/hor2"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

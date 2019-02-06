@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/toolbar_credit"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardElevation="0dp"
+        android:alpha="0"
+        tools:alpha="1"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="?topAppMargin"
+        app:cardBackgroundColor="?colorPrimaryDark"
+        app:cardCornerRadius="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+    <LinearLayout
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingEnd="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:id="@+id/linearLayout">
+
+
+        <TextView
+                android:textAppearance="@style/Title"
+                android:text="My income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_conversion_absoluteHeight="35dp"
+                tools:layout_editor_absoluteY="10dp"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_conversion_absoluteWidth="128dp"/>
+
+        <Space android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"/>
+
+        <ImageButton
+                android:background="@android:color/transparent"
+                android:id="@+id/changeThemeImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp"/>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
